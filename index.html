@@ -1,0 +1,56 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OPGC Internship | Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <nav class="bg-blue-900 text-white p-4 flex justify-end">
+  <div class="space-x-6">
+    <a href="index.html" class="hover:underline">Home</a>
+    <a href="overview.html" class="hover:underline">Overview</a>
+    <a href="ci.html" class="hover:underline">C&I</a>
+    <a href="electrical.html" class="hover:underline">Electrical</a>
+    <a href="coal.html" class="hover:underline">Coal Handling</a>
+    <a href="safety.html" class="hover:underline">Safety</a>
+    <a href="operation.html" class="hover:underline">Operations</a>
+  </div>
+</nav>
+
+
+
+  <section class="p-10 text-center bg-white shadow">
+    <h1 class="text-4xl font-bold text-blue-800 mb-4">Welcome to My OPGC Internship Portfolio</h1>
+    <p class="text-lg">Explore the departments and systems I worked with during my summer internship at OPGC.</p>
+  </section>
+
+  <section class="p-6">
+    <h2 class="text-2xl font-semibold mb-4">Latest Highlights</h2>
+    <ul id="newsList" class="list-disc pl-6 text-blue-700"></ul>
+  </section>
+
+  <footer class="text-center p-4 text-sm text-gray-600 bg-gray-200">
+    &copy; 2025 Pritimayee Padhan | OPGC Internship
+  </footer>
+
+  <script>
+    const news = [
+      "Completed training on Control & Instrumentation Systems",
+      "Visited the Coal Handling Plant ",
+      "Studied DCS Systems in Units 3 & 4",
+      "Learned about Emergency Protocols in Electrical Dept"
+    ];
+    const list = document.getElementById('newsList');
+    news.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = item;
+      list.appendChild(li);
+    });
+  </script>
+</body>
+</html>
+
+

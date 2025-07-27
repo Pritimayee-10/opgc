@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Control & Instrumentation | OPGC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <a href="index.html" class="text-blue-700 underline block mb-4">&larr; Back to Home</a>
+  <h1 class="text-3xl font-bold text-blue-800 mb-4">Control & Instrumentation (C&I)</h1>
+
+  <!-- Quick Summary -->
+  <h2 class="text-xl font-semibold text-blue-700 mb-2">Quick Summary: C&I Role</h2>
+  <p class="mb-4">
+    C&I systems automate, monitor, and optimize power plant operations, ensuring safety, efficiency, and reliability — especially in high-pressure environments like OPGC’s thermal units.
+  </p>
+
+  <!-- Full Description -->
+  <h2 class="text-xl font-semibold text-blue-700 mb-2">Role of Control and Instrumentation (C&I) in Power Generation</h2>
+  <p class="mb-4">
+    Control and Instrumentation (C&I) systems are the backbone of modern power plant operations, playing a pivotal role in ensuring the safe, efficient, reliable, and environmentally compliant generation of electricity. In coal-fired thermal power plants like OPGC, where multiple complex processes operate simultaneously under high pressure and temperature, C&I systems provide the automation and intelligence required to maintain balance and performance across the plant.
+  </p>
+  <p class="mb-4">
+    The C&I department ensures precise monitoring, control, and automation of critical processes such as boiler temperature, turbine speed, feedwater flow, fuel handling, and flue gas emissions. These systems integrate hardware like transmitters, sensors, and control valves with software logic through DCS and PLC to optimize plant efficiency and reduce manual intervention.
+  </p>
+
+  <!-- PLC Section -->
+  <h2 class="text-xl font-semibold text-blue-700 mt-6 mb-2">Overview of PLC System</h2>
+  <p class="mb-4">
+    PLCs are used at OPGC for process automation in areas such as coal handling, ash handling, water treatment, and cooling tower systems. The PLC reads input signals from field instruments (like sensors and switches), processes them based on pre-programmed logic (usually written in ladder logic), and controls output devices like actuators, relays, and motors.
+  </p>
+
+  <p class="mb-4">
+    The diagram below illustrates a simplified automation overview of a power plant. Inputs like pressure, level, temperature, and flow signals are received by the PLC from transmitters (e.g., PT, FS, LS). The PLC processes these inputs and sends control signals to systems like boilers, turbines, and water cycles — thereby automating generation and grid operations.
+  </p>
+
+  <!-- Insert PLC Diagram -->
+  <div class="bg-white rounded shadow p-4 mt-6 max-w-3xl mx-auto">
+    <img src="images/plc-system-diagram.png" alt="PLC System Diagram from OPGC Report" class="w-full h-auto rounded">
+    <p class="text-center mt-2 text-sm text-gray-700">Fig 7.1: Overview of Automation in a Power Plant using PLC</p>
+  </div>
+
+  <!-- Responsibilities -->
+  <h2 class="text-xl font-semibold text-blue-700 mt-6 mb-2">Key Responsibilities in C&I</h2>
+  <ul class="list-disc pl-6 mb-4">
+    <li>Monitoring and calibration of pressure, temperature, flow, and level transmitters</li>
+    <li>Cold loop checking, panel termination, and marshalling cabinet review</li>
+    <li>Use of Hart communicator to configure smart transmitters</li>
+    <li>Real-time control and alarming through DCS and SCADA</li>
+  </ul>
+</body>
+</html>
